@@ -21,6 +21,8 @@ function addAnimationProp(animInfo) { // props - object with properties: element
     }
   }
   addStyles(stylesKey); // add keyframe style
+  elem.style.backgroundImage = "url(" + image + ")";
+  elem.style.animation = animName + " " + speed + " steps(" + steps + ") infinite";
 
 }
 (function(){
@@ -31,8 +33,7 @@ function addAnimationProp(animInfo) { // props - object with properties: element
     startCoords: "148px 64px",
     endCoords: "-49px 64px",
     steps: 4,
-    speed: "0.45"
-  },
-    moveUp;
+    speed: "0.45s"
+  }, moveUp;
   moveUp = addAnimationProp(upObj);
 })();
