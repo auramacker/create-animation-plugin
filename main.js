@@ -6,7 +6,7 @@ function addAnimationProp(animInfo) { // props - object with properties: element
       end = animInfo.endCoords,
       steps = animInfo.steps,
       speed = animInfo.speed,
-      styles;
+      stylesKey;
   stylesKey = "@keyframes " + animName + "{ 0% { background-position: " + start + ";} 100% { background-position: " +
   end + "}}"; // create keyframes
   function addStyles(style) {
